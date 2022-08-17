@@ -1,0 +1,57 @@
+/* 最新文章图标 */
+.newPost-left,
+.newPost-right {
+    position: absolute;
+    top: 0;
+    color: white;
+    padding: 0 15px;
+    background-color: #49b1f5;
+    border-radius: 0 0 10px 10px;
+}
+
+.newPost-left {
+    left: 15px;
+}
+
+.newPost-right {
+    right: 15px;
+}
+
+/*导航栏居中*/
+#nav .menus_items {
+    /* display: inline; 这个带不带都可以，本来就是inline */
+    position: absolute;
+    width: fit-content;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*子菜单横向居中*/
+#nav .menus_items .menus_item:hover .menus_item_child{
+    display: flex;
+  }
+  /* 这里的2是代表导航栏的第二个元素，即有子菜单的元素，可以按自己需求修改 */
+.menus_items .menus_item:nth-child(3) .menus_item_child {
+    left: -65px;
+}
+.menus_items .menus_item:nth-child(4) .menus_item_child {
+    left: -65px;
+}
+
+/* 标签显示数字，排序 */
+
+#aside-content .card-tag-cloud a {
+    border: 1px solid;
+    line-height: 1.5;
+    border-radius: 6px;
+    margin: 3px;
+    padding: 0 5px;
+}
+
+.tag-cloud-list a {
+    border: 1px solid;
+    line-height: 1.5;
+    border-radius: 6px;
+    padding: 5px 15px;
+    font-size: 1.2rem;
+    margin: 5px;
+}
